@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(0,0,0);">
+        <div class="container"><a class="navbar-brand text-white" href="#">Review Blackburn 2021</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-white" href="#">Home</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+        </div><a class="text-white" href="#">Artists</a></div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro" style="height: 366px;padding: 19px;">
+            <div class="container">
+                <div class="about-me">
+                    <h1>Artists</h1>
+                    <p>We're delighted to introduce the first group of artists to take part in the programme.&nbsp;<br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="img-fluid figure-img">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure class="figure"><img class="img-fluid figure-img">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure class="figure"><img class="img-fluid figure-img">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure class="figure"><img class="img-fluid figure-img">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure class="figure"><img class="img-fluid figure-img">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main><script>
+    $(function() {
+		$('.image').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
+});
+</script>
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
