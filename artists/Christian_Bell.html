@@ -21,37 +21,119 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html" style="color: rgb(255,255,255);">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/artists/Amelia_Baron.html" style="color: rgb(255,255,255);">Amelia Baron<br></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/artists/Christian_Bell.html" style="color: #ffffff;">Christian Bell<br></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/artists/Susan_Brazendale.html" style="color: rgb(255,255,255);">Susan Brazendale<br></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/artists/Francis_Martin.html" style="color: rgb(255,255,255);">Francis Martin<br></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/artists/Kymberly_Westall.html" style="color: rgb(255,255,255);">Kymberly Westall<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Artists/Amelia_Baron.html" style="color: rgb(255,255,255);">Amelia Baron<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/Artists/Christian_Bell.html" style="color: #ffffff;">Christian Bell<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Artists/Susan_Brazendale.html" style="color: rgb(255,255,255);">Susan Brazendale<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Artists/Francis_Martin.html" style="color: rgb(255,255,255);">Francis Martin<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Artists/Kymberly_Westall.html" style="color: rgb(255,255,255);">Kymberly Westall<br></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="photo-gallery">
         <div class="container">
+            <h2 class="text-center"><br>21st Century Psychedelia<br></h2><style>
+    #fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -300px;
+  margin-top: -180px;
+  background: black;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+
+.test:hover ~ .test2 {
+  display: none;
+}
+</style>
+
+<div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" width="600" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+    <br>
+    <button class="btn btn-primary" type="button" onclick=manualInvokeGallery();>Show Pictures</button>
+</div>
+
+
+<div id="fade" onClick="lightbox_close();"></div>
+            <h2 class="text-center" style="padding-top: 0px;">Christian Bell</h2>
+            <div class="row justify-content-center align-items-center photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="#" onclick="lightbox_open();"><img class="img-fluid" id="first" src="../assets/img/CBell(Video).png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Amelia/Connected%20011%20(image%202).jpg"><img class="img-fluid" id="second" src="../assets/img/Christian/no.%202_%20Peepers%20Dance%20Performance.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%203_%20Peepers%20Re-union.jpg"><img class="img-fluid" src="../assets/img/Christian/no.%203_%20Peepers%20Re-union.jpg"></a></div>
+            </div>
+            <div class="row justify-content-center align-items-center photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%204_%20Peepers%20Memory%20Excavation.jpg"></a><img class="img-fluid" src="../assets/img/Christian/no.%204_%20Peepers%20Memory%20Excavation.jpg"></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%205_%20Peepers%20Veterans.jpg"><img class="img-fluid" src="../assets/img/Christian/no.%205_%20Peepers%20Veterans.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%206%20Peepers%20Press%20Cutting.jpg"><img class="img-fluid" src="../assets/img/Christian/no.%206%20Peepers%20Press%20Cutting.jpg"></a></div>
+            </div>
+            <div class="row justify-content-center align-items-center photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%207%20Peepers%20Mural%20Concept%20(by%20Mike%20Waters).jpg"><img class="img-fluid" src="../assets/img/Christian/no.%207%20Peepers%20Mural%20Concept%20(by%20Mike%20Waters).jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%208%20Peepers%20Mural%20Concept%202%20(by%20Mike%20Waters).jpg"><img class="img-fluid" src="../assets/img/Christian/no.%208%20Peepers%20Mural%20Concept%202%20(by%20Mike%20Waters).jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/no.%209%20Peepers%20Stage%20and%20Mural%20by%20Mike%20Waters%201970%20(something).jpg"><img class="img-fluid" src="../assets/img/Christian/no.%209%20Peepers%20Stage%20and%20Mural%20by%20Mike%20Waters%201970%20(something).jpg"></a></div>
+            </div>
             <div class="intro">
+                <p style="color: rgb(0,0,0);font-size: 20px;"><br>Over recent years, the derelict and forbidden space of Museum Square has been scoped out by various institutions, authorities and creatives as a site for re-development.&nbsp;<br>In 2019 I conducted a research project which explored
+                    the cultural heritage of Museum Square; un-covering local memories of a subterranean prog-rock nightclub attended by young teenagers in the 1970’s-80’s.&nbsp;<br><em>Peepers </em>was a sub-community led nightclub - an outlet and escape
+                    for young people of the area. A space to bang heads to rock music, drink pop and burn joss sticks, creating a sub-cultural atmosphere of heavy sound, psychedelic murals, UV lighting, smells of patchouli, and an overcrowding of denim-clad
+                    teenagers.&nbsp;<br>Over 40 years on, a community of people who co-created and attended <em>Peepers </em>still exist through the facilitation of a nostalgic social media page. It is through this social media page that I began my research
+                    and excavation by un-picking and re-imagining a collective memory. This led to the delivery of a live artwork in January 2020 which re-united over 80 Peepers veterans and familiarized them with sensory elements and references of Peepers,
+                    including a playlist of prog rock music, fluorescent and psychedelic imagery, and rays of UV lighting breaking through clouds of incense. This culmination of sensory references transported the participants back to their youth. A series
+                    of photographic imagery archive this transportation.&nbsp;<br>This new archive is accompanied by new findings - an archive of three images sourced by local artist Mike Waters. These include 2 concept drawings for the original psychedelic
+                    murals which Mike installed in Peepers in the early/mid-1970s; as well as a press cutting promoting the nightclub and Mikes murals at the time.<br><br>Over 40 years since Peepers vibrated the site of Museum Square; technological advancement
+                    and innovation has driven the manifestation of youth culture into the realm of the digital.<br>During the current era of <em>Instagram, Snapchat</em> and <em>TikTok </em>addiction; <em>21st Century Psychedelia </em>frames a past-generation
+                    of youth culture within modern devices;<em> </em>critiquing modern-day hallucination within contemporary culture. <br><br></p>
                 <p class="text-center"><img src="../assets/img/People/content.people.christianbell.jpg" style="padding: 30px;width: 250px;" alt="Picture of Christian Bell"></p>
                 <h2 class="text-center">Christian Bell</h2>
                 <p class="text-center" style="color: rgb(0,0,0);font-size: 20px;">Christian is a multi-disciplinary artist and recent graduate of the BA Fine Art (hons) course at Blackburn University Centre.<br><br>Through his own personal interrogation of socially engaged and place-based research, Christian has developed
                     an ethnographic approach to delivering interventionist contemporary artworks in response to working closely with various communities and collaboratively exploring place, youth and cultural reference.&nbsp;<br><br>Christian is currently
                     commissioned by the National Festival of Making and In-Situ Pendle.<br></p>
-            </div>
-            <div class="row photos">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a id="first" data-lightbox="photos" href="../assets/img/Christian/Peepers%20Dance%20Performance.jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Dance%20Performance.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/Peepers%20Memory%20Excavation.jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Memory%20Excavation.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/Peepers%20Mural%20Concept%20(by%20Mike%20Waters).jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Mural%20Concept%20(by%20Mike%20Waters).jpg"></a></div>
- 
-            </div>
-            <div class="row photos">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/Peepers%20Press%20Cutting.jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Press%20Cutting.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/Peepers%20Re-union.jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Re-union.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/Peepers%20Veterans.jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Veterans.jpg"></a></div>
-            </div>
-            <div class="row photos">
-                           <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="../assets/img/Christian/Peepers%20Mural%20Concept%202%20(by%20Mike%20Waters).jpg"><img class="img-fluid" src="../assets/img/Christian/Peepers%20Mural%20Concept%202%20(by%20Mike%20Waters).jpg"></a></div>
             </div>
         </div>
     </div>
@@ -61,13 +143,12 @@
                 <div class="row">
                     <div class="col-md-6 item text">
                         <h3>Review</h3>
-                        <p>We are five emerging artists who are staging a unique exhibition in Blackburn this May. All you need to see the work is a smartphone and time to move around Blackburn, looking.
-Amelia Baron, Christian Bell, Susan Brazendale, Francis Martin and Kym Westall have come together as part of the Creative Accelerator Project. 
-</p>
+                        <p><br>We are five emerging artists who are staging a unique exhibition in Blackburn this May. All you need to see the work is a smartphone and time to move around Blackburn, looking. Amelia Baron, Christian Bell, Susan Brazendale,
+                            Francis Martin and Kym Westall have come together as part of the Creative Accelerator Project.<br><br></p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
-                <p class="copyright">(Re)View Blackburn © 2021</p>
+                <p class="copyright"><br>(Re)View Blackburn © 2021<br></p>
             </div>
         </footer>
     </div>
